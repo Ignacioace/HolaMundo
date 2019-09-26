@@ -33,3 +33,15 @@ def digito_verificador(rut_sin_digito) :
 	
 mi_rut = 20433659
 print("-".join((str(mi_rut), str(digito_verificador(mi_rut)))))	
+
+#para terminar las cosas..
+#git add ejemplo_funciones.py
+#git commit -m "agregamos ejemplos de uso de funciones"
+#git checkout master
+#pull
+#git merge dm_ejemplo_funciones
+#git push
+#git branch -d ia_ejemplo_funciones
+
+#
+#
