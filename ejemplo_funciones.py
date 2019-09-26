@@ -42,6 +42,3 @@ print("-".join((str(mi_rut), str(digito_verificador(mi_rut)))))
 #git merge dm_ejemplo_funciones
 #git push
 #git branch -d ia_ejemplo_funciones
-
-#
-#
