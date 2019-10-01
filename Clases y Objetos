@@ -1,0 +1,58 @@
+class Persona:
+	"""self -> rol similar al this de java
+		el constructor se llama siempre 
+		(doble underscore)init(doble underscore)
+		Todas las operaciones de la clase reciben
+		al self como primer parametro
+	"""
+	def __init__(self, nombre, rut):
+		self.nombre = nombre
+		sef.rut = rut
+	
+	#Todos los metodos reciben el self como parametro
+	def imprimir (self):
+		texto = " ".join(["Soy", self.nombre, ", mi rut es", self.rut ])
+		print(texto)
+    
+    
+   
+Main
+
+#del modulo Perona.py importamos Persona
+from Persona import Persona
+
+#Ahora en el main, voy a crear un objeto y voy a llamar al metodo
+perrin = Persona("Juan Eduardo Lopez", "12365789-2")
+perrin.imprimir()
+
+#En python los atributos son siempre publicos
+#y por eso los puedo modificar
+perrin.rut = "19233221-7"
+perrin.imprimir()
+
+#Sin embargo hay una convencion -> si un atributo parte con _
+#los programadores Phyton lo tratan como si fuera privado
+#perrin._nombre = "Juan Lopez" -> esto no se hace!
+
+#Crear una persona leyendo desde la consola:
+nombre = input("Ingrese sus rut:")
+rut = input("Ingrese su rut:")
+persona_nueva = Persona(nombre, rut)
+persona_nueva.imprimir()
+
+
+#guardar como '.gitignore' dentro de la carpeta del proyecto
+#este archivo señala que cosas no se van a guardar en el repositorio
+#del proyecto
+
+"NO vamos a guardar los archivos temporales de python
+__pycache__/
+
+#git add Persona.py Main.py
+#git commit -m "Agregamos ejemplos de clases y objeto"
+#git add .gitignore
+#git commit -m "Agregamos .gitignore"
+#git pull por si hubiese algun cambio
+#git merch ia_ejemplo_clases_objetos
+#git remote set-url origin https://github.com/Ignacioace/repo.git (cambiar repositorio)
+#git push
